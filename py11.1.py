@@ -9,4 +9,4 @@ except ZeroDivisionError:
 except ValueError:
     print('Geef aan met cijfers')
 except:
-    print('Other errors')
+    print('Other errors sdkjfskdjf')
