@@ -8,4 +8,4 @@ def code(invoerstring):
     for s in c:
         d += s
     print(d)
-code('RutteAlkmaarden Helder')
+code()

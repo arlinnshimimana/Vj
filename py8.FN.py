@@ -24,7 +24,7 @@ def nieuwe_kluis():
         kluis_nummer = kluis_combinatie[0]
         list.remove(int(kluis_nummer))
 
-    if len(list) > 0 :
+    if len(list) > 0:
         print('Dit zijn de kluizen die nog vrij zijn ' + str(list))
         nieuw_nummer = list[0]
         print('Uw kluisnummer is: ' + str(nieuw_nummer))
@@ -65,13 +65,17 @@ def kluis_terug():
     w = input('Wat is uw code: ')
     file.seek(0)
 
-    for i in kluis_info:
+    e = kluis_info[0].split(';')
+    if str(w) not in kluis_info[0] and k != e[0]:
+        file.write(kluis_info[0][0:-1])
+
+    for i in kluis_info[1]:
 
         e = i.split(';')
 
         if str(w) not in i and k != e[0]:
 
-            file.write(i)
+            file.write('\n' + i[0:-1])
 
     file.truncate()
 

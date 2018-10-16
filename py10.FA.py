@@ -31,12 +31,15 @@ def omroepen_reis(stations, beginstation, eindstation):
             print('-' + i)
     print('Jij stapt uit in: '+ eindstation)
     print('Fijne rijs!')
+    print()
 
 
 
 stations = ["Schagen", "Heerhugowaard", "Alkmaar", "Castricum", "Zaandam", "Amsterdam Sloterdijk", "Amsterdam Centraal", "Amsterdam Amstel","Utrecht Centraal", "’s-Hertogenbosch", "Eindhoven","Weert", "Roermond","Sittard", "Maastricht"]
 
 while True:
+    print(stations)
+    print()
     beginstation = inlezen_beginstation(stations)
     eindstation = inlezen_eindstation(stations, str(beginstation))
     omroepen_reis(stations, beginstation, eindstation)
